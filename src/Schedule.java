@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class Schedule
 {
-    private HashMap<String, Class> classMap;
+    private final HashMap<String, Class> classMap;
 
     public Schedule()
     {
@@ -16,15 +16,16 @@ public class Schedule
     }
 
     //Видалення за кодом
-    public void removeClass(String classCode)
+    public boolean removeClass(String classCode)
     {
         if (classMap.containsKey(classCode))
         {
             classMap.remove(classCode);
+            return true;
         }
         else
         {
-            System.out.println("Заняття з кодом " + classCode + " не знайдено");
+            return false;
         }
     }
 

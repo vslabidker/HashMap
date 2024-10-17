@@ -1,4 +1,4 @@
-public class Class {
+public final class Class {
     public String classCode;
     public String subjectName;
     public String time;
