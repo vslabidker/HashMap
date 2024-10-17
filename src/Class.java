@@ -3,7 +3,7 @@ public final class Class {
     public String subjectName;
     public String time;
 
-    public Class(String classCode, String subjectName, String time)
+    public Class(final String classCode, final String subjectName, final String time)
     {
         this.classCode = classCode;
         this.subjectName = subjectName;
