@@ -1,9 +1,9 @@
 public class Class {
-    public String classCode;
-    public String subjectName;
-    public String time;
+    public final String classCode;
+    public final String subjectName;
+    public final String time;
 
-    public Class(final String classCode, final String subjectName, final String time)
+    public Class(String classCode, String subjectName, String time)
     {
         this.classCode = classCode;
         this.subjectName = subjectName;
